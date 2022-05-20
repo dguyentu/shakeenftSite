@@ -1,0 +1,56 @@
+
+.cards-title {
+    text-align: center;
+    font-weight: normal;
+    font-size: 2.6rem;
+  }
+  
+  .productCard {
+    text-align: center;
+    width: 250px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px 1px rgba(0.1, 0.1, 0.1, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block;
+    
+    
+  }
+  
+  
+  
+  .pet-photo {
+    width: 100%;
+  }
+  
+  .pet-name {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0 0 1rem 0;
+  }
+  
+  .species {
+    font-size: 0.9rem;
+    color: #888;
+    vertical-align: middle;
+  }
+  
+  .foods-list {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 17px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  
+  .footer {
+    font-size: 0.7rem;
+    color: #888;
+    text-align: center;
+    margin: 0;
+  }
+
+ 
+  

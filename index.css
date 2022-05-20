@@ -112,7 +112,8 @@ body {
     position:fixed;
     right:0;
     bottom:40vh;
-    display:flex;
+    align-content: center;
+    display: flex;
     flex-direction: column;
     justify-content:center;
     z-index:4;
@@ -179,6 +180,21 @@ body {
     overflow-y:auto;
     display:none;
 }
+.container2 {
+    width:90vw;
+    height:90vh;
+    padding:5vh 5vw;
+    background: white;
+    color: black;
+    z-index:9;
+    position:fixed;
+    max-height:100vh;
+    overflow-y:auto;
+    display: none;
+    
+}
+
+
 .container div {
     font-size:25px;
     margin:20px 0px;
@@ -329,6 +345,8 @@ body {
     }
     #work {
         display:none;
+        
+
     }
     #footer {
         text-align:center;
