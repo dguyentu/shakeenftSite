@@ -72,8 +72,8 @@ function foods(foods) {
 function nftTemplate(pet) {
   return `
       <div class="productCard">
-      <img class="pet-photo" src="${pet.photo}">
-      <h2 class="pet-name">${pet.name} <span class="species">(${pet.species})</span></h2>
+      <img class="nft-photo" src="${pet.photo}">
+      <h2 class="nft-name">${pet.name} <span class="species">(${pet.species})</span></h2>
       <p><strong>Age:</strong> ${age(pet.birthYear)}</p>
       ${pet.favFoods ? foods(pet.favFoods) : ""}
       </div>
@@ -81,9 +81,9 @@ function nftTemplate(pet) {
 }
 
 document.getElementById("cards").innerHTML = `
-    <h1 class="cards-title">Pets (${nftData.length} results)</h1>
+    
     ${nftData.map(nftTemplate).join("")}
-    <p class="footer">These ${nftData.length} pets were added recently. Check back soon for updates.</p>
+    <p class="footer">These ${nftData.length} avatars were added recently. Let's welcome them to the family!</p>
   `;
 
 

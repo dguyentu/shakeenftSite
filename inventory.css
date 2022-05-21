@@ -1,16 +1,10 @@
 
-.cards-title {
-    text-align: center;
-    font-weight: normal;
-    font-size: 2.6rem;
-    
-  }
+
   
   .productCard {
     text-align: center;
     width: 200px;
     margin: 10px;
-    
     background-color: #fff;
     box-shadow: 1px 1px 1px 1px rgba(0.1, 0.1, 0.1, 0.1);
     border-radius: 10px;
@@ -22,11 +16,11 @@
   
   
   
-  .pet-photo {
+  .nft-photo {
     width: 100%;
   }
   
-  .pet-name {
+  .nft-name {
     font-size: 2rem;
     font-weight: normal;
     margin: 0 0 1rem 0;
