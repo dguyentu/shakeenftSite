@@ -1,48 +1,62 @@
 const nftData = [
-    {
-      name: "Purrsloud",
-      species: "Cat",
-      favFoods: ["wet food", "dry food", "<strong>any</strong> food"],
-      birthYear: 2016,
-      photo: "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
-    },
-    {
-      name: "Barksalot",
-      species: "Dog",
-      birthYear: 2008,
-      photo: "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
-    },
-    {
-      name: "Meowsalot",
-      species: "Cat",
-      favFoods: ["tuna", "catnip", "celery"],
-      birthYear: 2012,
-      photo: "https://learnwebcode.github.io/json-example/images/cat-1.jpg"
-    }
-  ];
-  
-  function age(birthYear) {
-    let calculatedAge = new Date().getFullYear() - birthYear;
-    if (calculatedAge == 1) {
-      return "1 year old";
-    } else if (calculatedAge == 0) {
-      return "Baby";
-    } else {
-      return `${calculatedAge} years old`;
-    }
+  {
+    name: "Purrsloud",
+    species: "Cat",
+    favFoods: ["wet food", "dry food", "<strong>any</strong> food"],
+    birthYear: 2016,
+    photo: "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+  },
+  {
+    name: "Barksalot",
+    species: "Dog",
+    birthYear: 2008,
+    photo: "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
+  },
+  {
+    name: "Meowsalot",
+    species: "Cat",
+    favFoods: ["tuna", "catnip", "celery"],
+    birthYear: 2012,
+    photo: "https://learnwebcode.github.io/json-example/images/cat-1.jpg"
+  },
+  {
+    name: "Meowsalot",
+    species: "Cat",
+    favFoods: ["tuna", "catnip", "celery"],
+    birthYear: 2012,
+    photo: "https://learnwebcode.github.io/json-example/images/cat-1.jpg"
+  },
+  {
+    name: "Meowsalot",
+    species: "Cat",
+    favFoods: ["tuna", "catnip", "celery"],
+    birthYear: 2012,
+    photo: "https://learnwebcode.github.io/json-example/images/cat-1.jpg"
   }
-  
-  function foods(foods) {
-    return `
+];
+
+function age(birthYear) {
+  let calculatedAge = new Date().getFullYear() - birthYear;
+  if (calculatedAge == 1) {
+    return "1 year old";
+  } else if (calculatedAge == 0) {
+    return "Baby";
+  } else {
+    return `${calculatedAge} years old`;
+  }
+}
+
+function foods(foods) {
+  return `
   <h4>Favorite Foods</h4>
   <ul class="foods-list">
   ${foods.map(food => `<li>${food}</li>`).join("")}
   </ul>
   `;
-  }
-  
-  function nftTemplate(pet) {
-    return `
+}
+
+function nftTemplate(pet) {
+  return `
       <div class="productCard">
       <img class="pet-photo" src="${pet.photo}">
       <h2 class="pet-name">${pet.name} <span class="species">(${pet.species})</span></h2>
@@ -50,13 +64,13 @@ const nftData = [
       ${pet.favFoods ? foods(pet.favFoods) : ""}
       </div>
     `;
-  }
-  
-  document.getElementById("cards").innerHTML = `
+}
+
+document.getElementById("cards").innerHTML = `
     <h1 class="cards-title">Pets (${nftData.length} results)</h1>
     ${nftData.map(nftTemplate).join("")}
     <p class="footer">These ${nftData.length} pets were added recently. Check back soon for updates.</p>
   `;
-  
+
 
 
