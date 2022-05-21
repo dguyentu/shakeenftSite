@@ -1,6 +1,4 @@
 
-
-  
   .productCard {
     text-align: center;
     width: 200px;
@@ -38,6 +36,7 @@
     color: #888;
     text-align: center;
     margin: 0;
+    padding-top: 50px;
   }
 
  
