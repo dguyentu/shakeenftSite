@@ -1,81 +1,52 @@
 const nftData = [
   {
-    name: "Purrsloud",
-    species: "Cat",
-    favFoods: ["wet food", "dry food", "<strong>any</strong> food"],
-    birthYear: 2016,
+    name: "SUN Neighbor",
+    IDnumber: 1,
     photo: "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
   },
   {
-    name: "Barksalot",
-    species: "Dog",
-    birthYear: 2008,
+    name: "SUN Neighbor",
+    IDnumber: 2,
     photo: "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
   },
   {
-    name: "Meowsalot",
-    species: "Cat",
-    favFoods: ["tuna", "catnip", "celery"],
-    birthYear: 2012,
+    name: "SUN Neighbor",
+    IDnumber: 3,
     photo: "https://learnwebcode.github.io/json-example/images/cat-1.jpg"
   },
   {
-    name: "Meowsalot",
-    species: "Cat",
-    favFoods: ["tuna", "catnip", "celery"],
-    birthYear: 2012,
+    name: "SUN Neighbor",
+    IDnumber: 4,
     photo: "https://learnwebcode.github.io/json-example/images/cat-1.jpg"
   },
   {
-    name: "Meowsalot",
-    species: "Cat",
-    favFoods: ["tuna", "catnip", "celery"],
-    birthYear: 2012,
+    name: "SUN Neighbor",
+    IDnumber: 5,
     photo: "https://learnwebcode.github.io/json-example/images/cat-1.jpg"
   },
   {
-    name: "Meowsalot",
-    species: "Cat",
-    favFoods: ["tuna", "catnip", "celery"],
-    birthYear: 2012,
+    name: "SUN Neighbor",
+    IDnumber: 6,
     photo: "https://learnwebcode.github.io/json-example/images/cat-1.jpg"
   },
   {
-    name: "Meowsalot",
-    species: "Cat",
-    favFoods: ["tuna", "catnip", "celery"],
-    birthYear: 2012,
+    name: "SUN Neighbor",
+    IDnumber: 7,
     photo: "https://learnwebcode.github.io/json-example/images/cat-1.jpg"
   }
 ];
 
-function age(birthYear) {
-  let calculatedAge = new Date().getFullYear() - birthYear;
-  if (calculatedAge == 1) {
-    return "1 year old";
-  } else if (calculatedAge == 0) {
-    return "Baby";
-  } else {
-    return `${calculatedAge} years old`;
-  }
-}
 
-function foods(foods) {
-  return `
-  <h4>Favorite Foods</h4>
-  <ul class="foods-list">
-  ${foods.map(food => `<li>${food}</li>`).join("")}
-  </ul>
-  `;
-}
 
-function nftTemplate(pet) {
+
+
+function nftTemplate(nft) {
   return `
       <div class="productCard">
-      <img class="nft-photo" src="${pet.photo}">
-      <h2 class="nft-name">${pet.name} <span class="species">(${pet.species})</span></h2>
-      <p><strong>Age:</strong> ${age(pet.birthYear)}</p>
-      ${pet.favFoods ? foods(pet.favFoods) : ""}
+      <img class="nft-photo" src="${nft.photo}">
+      <h2 class="nft-name">${nft.name}</h2>
+      <p class="nft-number">No. ${nft.IDnumber}</p>
+      
       </div>
     `;
 }
